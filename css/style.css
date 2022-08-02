@@ -1,6 +1,25 @@
 .navbar{
     background:  linear-gradient(90deg, #051336, #0E315B, #24385B, #98CC3E);
 }
+
+main{
+    margin-top: 57px;
+}
+main .carousel-inner img{
+    max-height: 70vh;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.img-icon-grid{
+    max-width: 30%;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+body{
+    background-color: rgb(14, 49, 91);
+}
 /*
 *{
     margin: 0;
