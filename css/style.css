@@ -1,3 +1,7 @@
+.navbar{
+    background:  linear-gradient(90deg, #051336, #0E315B, #24385B, #98CC3E);
+}
+/*
 *{
     margin: 0;
     padding: 0;
@@ -36,6 +40,10 @@ main{
     border-radius: 20px;
 }
 
+.main-div{
+    background-color: rgb(32, 53, 88);
+}
+
 .img-main{
     width: 90%;
 }
@@ -63,3 +71,5 @@ object{
 h1,h2,h3,h4,h5, h6{
     color: #32AFF6;
 }
+
+*/
