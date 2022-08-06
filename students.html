@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Invocación de Jquery JavaScript -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./js/funciones.js"></script>
+    <!-- / Invocación de Jquery JavaScript -->
+
     <title>Actividad 2 - Desarrollo Web</title>
 </head>
 <body>
@@ -47,7 +53,7 @@
           <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Estudiantes del curso de Desarrollo Web de la Universidad Mariano Gálvez, sede San Pedro, San Marcos.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <table class="table text-white">
+              <table id="dataTable" class="table text-white">
                       <tr>
                           <td>No</td>
                           <td>Perfil</td>
@@ -103,8 +109,28 @@
                           <td>95</td>
                       </tr>
               </table>
-              
             </div>
+
+            <form class="row g-3 needs-validation" novalidate>
+              <button id="btnAgregar" type="button" class="col btn btn-success">Agregar</button>
+              <button id="btnGuardar" type="button" class="col btn btn-success col-5" style="display: none;">Guardar</button>
+              <button id="btnListar" type="button" class="col btn btn-primary offset-2 col-5" style="display: none;">Listar</button>
+              
+              
+              <div id="inputsData" style="display: none;">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">Perfil</span>
+                  <input id="inputPicture" type="text" class="form-control" placeholder="Link de imagen de perfil" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div> 
+                <div class="input-group mb-3 col-md-4">
+                  <span class="input-group-text" id="basic-addon2">Nombre</span>
+                  <input id="inputName" type="text" class="form-control" placeholder="Escribe el nombre" aria-label="Username" aria-describedby="basic-addon2" required>
+                  <span class="input-group-text" id="basic-addon3">Promedio</span>
+                  <input id="inputAverage" type="number" min="0" max="100" class="form-control" placeholder="Escribe el promedio" aria-label="Username" aria-describedby="basic-addon3" required>
+                </div>
+              </div>
+            </form>
+
           </div>
         </div>
 
